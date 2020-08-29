@@ -9,6 +9,8 @@
 void main()
 {
     RPC_STATUS status;
+
+    //以下必须用Unicode宽字符，不能直接用ANSI字符。不然会报RPC_S_PROTSEQ_NOT_SUPPORTED(1703)的错误。
     LPWSTR pszProtocolSequence = L"ncacn_np";
     LPWSTR pszSecurity = NULL;
     LPWSTR pszEndpoint = L"\\pipe\\hello";
