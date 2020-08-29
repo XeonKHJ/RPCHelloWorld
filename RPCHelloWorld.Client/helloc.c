@@ -9,13 +9,13 @@
 void main()
 {
     RPC_STATUS status;
-    unsigned char* pszUuid = NULL;
-    unsigned char* pszProtocolSequence = "ncacn_np";
-    unsigned char* pszNetworkAddress = NULL;
-    unsigned char* pszEndpoint = "\\pipe\\hello";
-    unsigned char* pszOptions = NULL;
-    unsigned char* pszStringBinding = NULL;
-    unsigned char* pszString = "hello, world";
+    LPWSTR pszUuid = NULL;
+    LPWSTR pszProtocolSequence = L"ncacn_np";
+    LPWSTR pszNetworkAddress = NULL;
+    LPWSTR pszEndpoint = L"\\pipe\\hello";
+    LPWSTR pszOptions = NULL;
+    LPWSTR pszStringBinding = NULL;
+    LPWSTR pszString = L"hello, world";
     unsigned long ulCode;
 
     status = RpcStringBindingCompose(pszUuid,
