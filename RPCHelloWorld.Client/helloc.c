@@ -5,6 +5,7 @@
 #include "../RPCHelloWorld.Common/hello.h" 
 #include <windows.h>
 
+
 void main()
 {
     RPC_STATUS status;
