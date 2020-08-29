@@ -9,9 +9,9 @@
 void main()
 {
     RPC_STATUS status;
-    unsigned char* pszProtocolSequence = "ncacn_np";
-    unsigned char* pszSecurity = NULL;
-    unsigned char* pszEndpoint = "\\pipe\\hello";
+    LPWSTR pszProtocolSequence = L"ncacn_np";
+    LPWSTR pszSecurity = NULL;
+    LPWSTR pszEndpoint = L"\\pipe\\hello";
     unsigned int    cMinCalls = 1;
     unsigned int    fDontWait = FALSE;
 
